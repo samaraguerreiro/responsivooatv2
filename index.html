@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,96 +7,86 @@
     <style>
         body {
             font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
             margin: 0;
             padding: 0;
-            background-color: #f9f3f9;
+            color: #333;
         }
         header {
             background-color: #9b59b6; /* Roxo */
             color: white;
-            text-align: center;
-            padding: 30px 0;
-            border-bottom: 5px solid #8e44ad;
-            border-radius: 0 0 20px 20px;
-        }
-        h1 {
-            margin: 0;
-            font-size: 2.5em;
-        }
-        p {
-            font-size: 1.2em;
-        }
-        section {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 30px;
-            padding: 30px;
-        }
-        article {
-            background-color: white;
-            width: 280px;
             padding: 20px;
-            border-radius: 15px;
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
             text-align: center;
-            transition: transform 0.3s;
         }
-        article:hover {
-            transform: translateY(-10px);
+        header h1 {
+            font-size: 36px;
+            margin: 0;
         }
-        img {
-            width: 100%;
-            height: auto;
-            border-radius: 15px;
+        .content {
+            padding: 20px;
         }
-        h2 {
-            color: #8e44ad; /* Roxo mais suave */
-            font-size: 1.6em;
+        .content h2 {
+            color: #9b59b6; /* Roxo */
+            font-size: 28px;
+            margin-bottom: 20px;
         }
-        p {
-            color: #555; /* Cor mais suave para o texto */
+        .content p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 20px;
         }
         footer {
             background-color: #9b59b6; /* Roxo */
             color: white;
             text-align: center;
-            padding: 15px 0;
+            padding: 15px;
             position: fixed;
-            bottom: 0;
             width: 100%;
-            border-radius: 20px 20px 0 0;
+            bottom: 0;
+        }
+
+        /* Responsividade */
+        @media (min-width: 768px) {
+            .content h2 {
+                font-size: 32px;
+            }
+            .content p {
+                font-size: 20px;
+            }
+        }
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 28px;
+            }
+            .content h2 {
+                font-size: 24px;
+            }
         }
     </style>
 </head>
 <body>
 
-<header>
-    <h1>Moda 2025</h1>
-    <p>As últimas tendências de moda para o próximo ano!</p>
-</header>
+    <header>
+        <h1>Moda 2025</h1>
+    </header>
 
-<section>
-    <article>
-        <img src="https://via.placeholder.com/300x200.png?text=Look+1" alt="Look 1">
+    <div class="content">
+        <h2>As Últimas Tendências de Moda para 2025</h2>
+        <p>A moda de 2025 traz uma mistura de conforto e estilo, com cores vibrantes e tecidos sustentáveis. As tendências incluem looks casuais para o dia a dia, trajes sofisticados para eventos e roupas esportivas para quem valoriza o estilo e o conforto ao mesmo tempo.</p>
+
         <h2>Look Casual</h2>
-        <p>Conforto e estilo para o seu dia a dia.</p>
-    </article>
-    <article>
-        <img src="https://via.placeholder.com/300x200.png?text=Look+2" alt="Look 2">
-        <h2>Look de Festa</h2>
-        <p>Arrase nas celebrações com glamour!</p>
-    </article>
-    <article>
-        <img src="https://via.placeholder.com/300x200.png?text=Look+3" alt="Look 3">
-        <h2>Look Esportivo</h2>
-        <p>Estilo e performance para treinos e passeios.</p>
-    </article>
-</section>
+        <p>O look casual para 2025 vai de peças leves e confortáveis, como camisetas de algodão orgânico, a calças largas e sapatos baixos. A moda de rua continuará a influenciar o design, trazendo praticidade e modernidade.</p>
 
-<footer>
-    <p>&copy; 2025 Moda 2025 - Todos os direitos reservados</p>
-</footer>
+        <h2>Look de Festa</h2>
+        <p>Para festas e eventos, os looks sofisticados ganharão destaque. Vestidos com tecidos metálicos, saias volumosas e blusas com brilho serão algumas das opções favoritas. O mix de texturas e cores será um grande diferencial.</p>
+
+        <h2>Look Esportivo</h2>
+        <p>O look esportivo, também conhecido como athleisure, continua sendo uma tendência importante. Roupas que podem ser usadas tanto para malhar quanto para sair, como leggings e tops de treino com detalhes sofisticados, estarão em alta.</p>
+    </div>
+
+    <footer>
+        <p>© 2025 Moda 2025 - Todos os direitos reservados</p>
+    </footer>
 
 </body>
 </html>
